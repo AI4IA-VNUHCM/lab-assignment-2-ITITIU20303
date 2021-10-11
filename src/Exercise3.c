@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
 	
 	while (testcase % 2 == 0)
     {
-       printf("2 ");
+       printf("2 * ");
         testcase = testcase/2;
     }
 	
@@ -32,6 +32,6 @@ int main(int argc, char *argv[]) {
     }
 
 	if (testcase > 2)
-       printf(" %d" , testcase);
+       printf("%d" , testcase);
 	return 0;
 }
