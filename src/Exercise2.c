@@ -20,6 +20,13 @@ int main(int argc, char *argv[]) {
 	int result;
 	//Your codes here
 	
+	result = 1;
+
+	for (int i = n; i >= 2; i--,i--)
+	{
+		result = result * i ;
+	}
+	
 	printf("%d", result);
 	return 0;
 }
