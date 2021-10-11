@@ -16,6 +16,22 @@ int main(int argc, char *argv[]) {
 	
 	//Your codes here
 	
+	while (testcase % 2 == 0)
+    {
+       printf("2 * ");
+        testcase = testcase/2;
+    }
 	
+	 for (int i = 3; i <= sqrt(testcase); i = i + 2)
+    {
+        while (testcase % i == 0)
+        {
+            printf(" %d" , i);
+            testcase = testcase/i;
+        }
+    }
+
+	if (testcase > 2)
+       printf("%d" , testcase);
 	return 0;
 }
